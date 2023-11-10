@@ -1,5 +1,6 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;600&display=swap');
 
 * {
     margin: 0;
@@ -22,6 +23,7 @@
 header {
     height: 15vh;
     background: transparent;
+    background: #1b1b1e;
     overflow: hidden;
 }
 
@@ -35,6 +37,7 @@ h1 {
     font-size: 2em;
     line-height: 15vh;
     text-align: center;
+    color: #fff;
 }
 
 nav {
@@ -54,12 +57,13 @@ li {
     font-size: 14px;
     width: 33%;
     text-align: center;
+    color: #fff;
     cursor: pointer;
 }
 
 a:hover {
-    background: #000;
-    color: #fff;
+    background: #d8dbe2;
+    color: #000;
     border-radius: 1em;
     padding: 0.9em 0.9em;
 }
@@ -73,14 +77,93 @@ a:hover {
 
 .search-input {
     width: 75%;
-    background: #457474;
+    background: #d8dbe2;
     height: 3em;
     border-radius: 1em;
-    color: #fff;
+    color: #000;
     padding-left: 1em;
 }
 
 .search-input::placeholder {
-    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    color: #000;
 }
 
+/*----------------------------------------*/
+/*---------------- BODY ----------------- */
+/*----------------------------------------*/
+
+main {
+    min-height: 100vh;
+}
+
+/*----------------------------------------*/
+/*--------------- FOOTER ---------------- */
+/*----------------------------------------*/
+
+footer {
+    height: 15vh;
+    background: #1b1b1e;
+    overflow: hidden;
+}
+
+.social-media-i {
+    height: 15vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 4.5em;
+    width: 50%;
+}
+
+.social-media-i div {
+    border: 0.3vh solid #fff;
+    height: 3em;
+    width: 3em;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #d8dbe2;
+}
+
+.facebook:hover {
+    border: 0.3vh solid #4267B2;
+    box-shadow: 0 0 10px #4267B2;
+    
+    .fa-facebook {
+    color: #4267B2;
+    background: #fff;
+    border-radius: 50%;
+}
+}
+
+.instagram:hover {
+    border: 0.3vh solid #E1306C;
+    box-shadow: 0 0 10px #E1306C;
+    
+    .fa-instagram {
+    color: #E1306C;
+}
+}
+
+.github:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+.linkedin:hover {
+    border: 0.3vh solid #0077B5;
+    box-shadow: 0 0 10px #0077B5;
+    
+    .fa-linkedin {
+    color: #0077B5;
+}
+}
+
+h3 {
+    width: 50%;
+    line-height: 15vh;
+    text-align: end;
+    font-family: Teko, sans-serif;
+    color: #d8dbe2;
+    font-size: 20px;
+}
