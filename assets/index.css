@@ -47,7 +47,8 @@ h1 {
 }
 
 nav {
-    width: 33.3%
+    width: 33.3%;
+    height: 15vh;
 }
 
 ul {
@@ -79,6 +80,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 33.3%;
+    height: 15vh;
 }
 
 .search-input {
@@ -94,6 +96,42 @@ a:hover {
     font-family: "Nunito Sans", sans-serif;
     color: #000;
 }
+.search-box .fa-solid {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    color: #0A66C2;
+    border-radius: 5px;
+    position: absolute;
+    top: 1.65em;
+}
+
+.x {
+    line-height: 15vh;
+    width: 3em;
+    height: 3em;
+    position: relative;
+}
+
+.x span {
+    width: 2em;
+    height: 5px;
+    background: #d8dbe2;
+    border-radius: 1em;
+    transition: 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.x span:nth-child(1) {
+   top: 25%;
+}
+.x span:nth-child(3) {
+    top: 75%;
+}
+
 
 /*----------------------------------------*/
 /*---------------- BODY ----------------- */
@@ -152,6 +190,8 @@ main {
     font-family: Outfit, sans-serif;
     font-size: 1.3em;
     margin: 2em 2em;
+    height: 15em;
+    overflow: scroll;
 }
 
 .get-in-touch {
@@ -291,4 +331,144 @@ h3 {
     font-family: Teko, sans-serif;
     color: #d8dbe2;
     font-size: 20px;
+}
+
+/*----------------------------------------*/
+/*----------- RESPONSIVE DESIGN --------- */
+/*----------------------------------------*/
+
+@media screen and (max-width: 880px) {
+    .banner h2 {
+        width: 90%;
+    } 
+
+    .about-me {
+        flex-direction: column;
+        margin-bottom: 8em;
+        height: 40em;
+    }
+    
+    .about-me p {
+        font-family: Outfit, sans-serif;
+        font-size: 1.3em;
+        margin: 1em 2em 0;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .social-media-i {
+        height: 15vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2.5em;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 718px) {
+    header h1 {
+        width: 44.8%;
+    }
+
+    nav {
+        width: 44.8%;
+    }
+
+    .search-box {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    header h1 {
+        width: 80%;
+    }
+
+    nav {
+        width: 10%;
+        display: grid;
+        place-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .about-me img {
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 532px) {
+    .about-me img {
+        width: 25em;
+    }
+
+    header h1 {
+        width: 60%;
+    }
+
+    nav {
+        width: 20%;
+        display: grid;
+        place-items: center;
+    }
+
+    .search-box {
+        width: 20%;
+    }
+
+    .social-media-i {
+        gap: 1.5em;
+    }
+
+    .about-me {
+        min-height: 15em;
+    }
+
+    .about-me p {
+        min-height: 15em;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .about-me img {
+        width: 23em;
+    }
+
+    .banner h2 {
+        color: #d8dbe2;
+        font-family: "Signika Negative", sans-serif;
+        font-size: 1.4em;
+        width: 80%;
+        text-align: center;
+        padding: 1em 1em;
+    } 
+
+    .social-media-i {
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .about-me img {
+        width: 19em;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .about-me img {
+        width: 15em;
+    }
+
+    .about-me {
+        min-height: 5em;
+    }
+
+    .about-me p {
+        margin-bottom: 5em;
+    }
 }
